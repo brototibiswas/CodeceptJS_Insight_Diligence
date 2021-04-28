@@ -5,7 +5,7 @@ exports.config = {
       show: true,
       windowSize: '1200x900',
       waitForNavigation: 'networkidle0',
-      waitforTimeout: 30000,
+      waitforTimeout: 10000,
       keepCookies: true
     }
   },

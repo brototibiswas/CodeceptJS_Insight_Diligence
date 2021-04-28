@@ -1,17 +1,16 @@
 const { I } = inject();
 const env = require('../config/global')
 
-console.log(`steps url: ${env.cred.url} || user == ${env.cred.username} || pass == ${env.cred.password}`)
+console.log(`steps url: ${env.credential.url} || user == ${env.credential.username} || pass == ${env.credential.password}`)
 
 Given('I am in login page', () => {
-  // I.amOnPage('/')
-  I.amOnPage(env.cred.url)
+  I.amOnPage(env.credential.url)
 });
 
 When('I enter valid login info', () => {
-  I.fillField('#UserName', env.cred.username);
+  I.fillField('#UserName', env.credential.username);
     I.see('Password')
-    I.fillField('#Password', env.cred.password);
+    I.fillField('#Password', env.credential.password);
     I.click('Log In')
 });
 

@@ -4,7 +4,7 @@
  * Entire module is exported and can be used from anywhere in the project
  */
 
-const envConifg = { 
+const envConfig = { 
     "qa" : {
         "url" : "https://diligenceqa.exiger.com/Auth/Login",
         "cred" : {
@@ -28,4 +28,4 @@ const envConifg = {
     }
 };
 
-module.exports = envConifg;
+module.exports = envConfig;

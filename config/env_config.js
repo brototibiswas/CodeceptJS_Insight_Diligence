@@ -1,4 +1,8 @@
-//envConifg.js file is used to manage all the URLs of the app
+/**
+ * env_conifg.js file is used to manage all the URLs, Credentials of the app
+ * 
+ * Entire module is exported and can be used from anywhere in the project
+ */
 
 const envConifg = { 
     "qa" : {

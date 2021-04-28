@@ -2,11 +2,11 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      // url:  host,
       show: true,
       windowSize: '1200x900',
       waitForNavigation: 'networkidle0',
-      waitforTimeout: 30000
+      waitforTimeout: 30000,
+      keepCookies: true
     }
   },
   include: {

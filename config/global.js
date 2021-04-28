@@ -1,3 +1,15 @@
+/**
+ * Configuration: Profile
+ * **********************
+ * Send dev environment through command line using : --profile 
+ * No need to send --profile for qa. Credentials are set to qa by default
+ * For staging: npx codeceptjs run --steps --profile stag
+ * For production: npx codeceptjs run --steps --profile prod
+ * 
+ * 
+ * Export object with URL, Username, Password that can be accessed from any modules in project
+ */
+
 const env = process.env.profile
 const dev_env = require('./env_config')
 

@@ -23,8 +23,6 @@
      password = dev_env[env].cred.password
  }
  
- console.log(`global url: ${host} || user == ${username} || pass == ${password}`)
- 
  exports.credential = {
      "url" : host,
      "username" : username,

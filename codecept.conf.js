@@ -3,10 +3,10 @@ exports.config = {
   helpers: {
     Puppeteer: {
       show: true,
+      waitForNavigation: "networkidle0",
       windowSize: '1200x900',
       waitForNavigation: 'networkidle0',
-      waitforTimeout: 10000,
-      keepCookies: true
+      waitforTimeout: 5000
     }
   },
   include: {
@@ -34,6 +34,14 @@ exports.config = {
       screenshotOnFail: true,
       retryFailedStep: true
     }
+    // autoLogin: {
+    //   enabled: true,
+    //   saveToFile: true,
+    //   inject: 'login',
+    //   cms: {
+
+    //   }
+    // }
   },
   cucumber: {
     cucumberOptions: {

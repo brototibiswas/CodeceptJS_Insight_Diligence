@@ -8,4 +8,4 @@ Feature: Login
   Scenario: Click Order button
     When I am on dashboard
     And I click on Create Order button
-    Then I should be directed to homepage
+    Then I should be directed to order form

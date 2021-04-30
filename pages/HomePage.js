@@ -7,6 +7,6 @@ module.exports = {
   caseTableDashboard: '.ui-jqgrid-view',
 
   dashboardPresent() {
-    I.waitForVisible(this.caseTableDashboard)
+    I.waitForVisible(this.caseTableDashboard, 10)
   }
 }

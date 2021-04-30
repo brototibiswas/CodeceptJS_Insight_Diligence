@@ -25,5 +25,8 @@ When('I am on dashboard', () => {
 
 When('I click on Create Order button', () => {
   I.click(homePage.createOrderBtn)
-  I.waitForVisible(homePage.orderForm)
+});
+
+Then('I should be directed to order form', () => {
+  I.waitForVisible(homePage.orderForm, 10)
 });

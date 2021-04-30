@@ -23,7 +23,7 @@ const envConfig = {
         "url" : "https://diligence.exiger.com/Auth/Login",
         "cred" : {
             "username" : "tdattacm@exiger.com",
-            "password" : "Exiger1234567"
+            "password" : "Exiger@12345"
         }
     }
 };

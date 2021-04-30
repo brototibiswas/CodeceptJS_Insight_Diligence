@@ -6,12 +6,16 @@ exports.config = {
       waitForNavigation: "networkidle0",
       windowSize: '1200x900',
       waitForNavigation: 'networkidle0',
-      waitforTimeout: 5000
+      waitforTimeout: 5000,
+      keepCookie: true,
+      keepBrowserState: true,
+      restart: false
     }
   },
   include: {
     I: './steps_file.js',
-    loginPage: './pages/LoginPage.js'
+    loginPage: './pages/LoginPage.js',
+    homePage: './pages/HomePage.js'
   },
   mocha: {},
   bootstrap: null,
